@@ -1,0 +1,141 @@
+/*main*/
+/* 1. Подключите в HTML-документ (с помощью сервиса GoogleFonts ) шрифт 
+Raleway и его насыщенность в 400 и 500 единиц.*/
+/*— Задайте для всего тела документа основной шрифт Raleway и как дополнительный sans-serif. Размер шрифта по-умолчанию 16px, 
+насыщенность 400 и междустрочный интервал 1,6em */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: 1.6em;
+ 
+}
+/*- С помощью группировки селекторов заголовков первого и второго уровня задайте
+ им междустрочный интервал 1.3em и насыщенность 500.*/
+h1, h2 {
+    margin: 20px 0 .5em;
+    padding: 0;
+    text-align: 1.3em;
+    font-weight: 500;
+}
+/*— Для заголовков первого уровня
+ размер шрифта по-умолчанию 38px, 
+ для второго уровня 20px*/
+h1 {
+        font-size: 38px;
+}
+h2 {
+        font-size: 20px;
+}
+/*— Всем ссылкам задать по-умолчанию цвет #f60*/
+a {
+    color: #f60;
+   /* text-decoration: none;*/
+}
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 990px;
+    padding: 0 20px;
+}
+
+.rabbit-logo {
+    margin: 21px 0 20px;
+    float: left;
+ 
+}
+
+div#nav {
+    float: right;
+}
+
+ul#mainNav {
+    padding: 5px 0;
+    margin: 0 0 0 15px;
+}
+
+ul#mainNav {
+    text-align: left;
+    margin: 0;
+}
+
+ul#mainNav {
+    padding: 5px 0;
+    margin: 0 0 0 15px;
+}
+
+ul#mainNav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mainNav li {
+    float: left;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  
+   
+}
+/*Для ссылок в главном блоке навигации (#mainNav) 
+убрать нижнее подчеркивание с помощью свойства 
+text-decoration. 
+Рамку справа в 1px сплошную цвета #f60. 
+Цвет текста задать #585858. */
+#mainNav li a {
+    padding: 22px 24px;
+    border-right: 1px solid #f60;
+    display: inline-block;
+    text-decoration: none;
+    color: #585858;
+}
+/*Для hover-эффекта задать белый 
+цвет текста и цвет фона #f60.*/
+#mainNav li a:hover{
+    color: #fff;
+    background-color: #f60;
+}
+
+
+/*Для блока .nav-separator задать 
+верхнюю сплошную рамку в 18px цвета #f60*/
+
+div.nav-separator {
+    clear: both;
+    padding: 0;
+    border-top: 18px solid #f60; 
+}
+
+/*— Для блока #inner-container задать
+цвет фона #fafafa*/
+
+#inner-container {
+    padding: 0;
+    max-width: 100%;
+    background-color: #fafafa;
+}
+
+#hero .container {
+    padding: 0;
+}
+
+/*Для блока #hero-summit задать фоновую картинку 
+home-banner.svg из папки img. Фон должен быть 
+центрирован и без повторений по вертикальной и 
+горизонтальной осям.*/
+#hero-summit {
+    background-image: url("img/home-banner.svg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 70px 0 40px;
+}
+
