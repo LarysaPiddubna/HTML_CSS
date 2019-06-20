@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    background-color: #fafafa;
+     
+}
+header {
+    height: 900px;
+    background-image: url(../img/hero-bg.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom:  60px;
+}
+.navigator {
+    position: relative;
+    height: 90px;
+    background-color: blanchedalmond;
+    opacity: 0.7;
+}
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+.to_menu {
+    display: none;
+    position: absolute;
+    background-color: #302b2a;
+    min-width: 160px;
+   /* z-index 1;*/
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.menu>ul>li {
+    display: inline-block;
+    margin: 0 30px;
+    font-size: 16px;
+    /*position: relative;*/
+}
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.menu>ul>li>a:hover {
+    border-bottom: 2px solid #f39477;
+}
+.to_menu>li {
+    display: none;
+    min-width: 160px;
+    background-color: antiquewhite;
+    position: absolute;
+    z-index: -1;/*На нижній шар? чому не виходить?*/
+}
+.to_menu a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.more:hover .to_menu {
+    display: block;
+}
+.to_menu a:hover {
+    background-color: #faafaa;
+    border: none;
+}
+/*.menu:hover .to_menu {
+    display: block;
+}*/
+.main_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    h1 {
+        font-size: 100px;
+        font-weight: bold;
+        color: #f39477;
+        line-height: 120px;
+    }
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .card_1 {
+        background: url(../img/shop0.jpg) no-repeat;
+    }
+    .card_2 {
+        background: url(../img/shop1.jpg) no-repeat;
+    }
+    .card_3 {
+        background: url(../img/shop2.jpg) no-repeat;
+    }
+    .card_4 {
+        background: url(../img/shop3.jpg) no-repeat;
+    }
+    .card_5 {
+        background: url(../img/shop4.jpg) no-repeat;
+    }
+    .card_6 {
+        background: url(../img/shop5.jpg) no-repeat;
+    }
+    .card_7 {
+        background: url(../img/shop6.jpg) no-repeat;
+    }
+    .card_8 {
+        background: url(../img/shop7.jpg) no-repeat;
+    }
+
+    .card_1, .card_2, .card_3, .card_4,
+    .card_5, .card_6, .card_7, .card_8 {
+        position: relative;
+        background-size: cover;
+       /* background-position: 50% 50%;*/
+        width: 300px;
+        height: 300px;
+        border: 5 px solid #000;
+        float: left;
+        font-family: 'Poppins', sans-serif;
+    } 
+    .sale {
+        position: absolute;
+        width: 50px;
+        height: 40px;
+        background-color: #fa160e;
+        z-index: 2;
+    }
+    .sale p {
+        color: #fff;
+        font-size: 15px;
+        text-align: center;
+    }
+    .discription_card {
+        position: relative;
+    }
+
+    .sale p,
+    .discription_card,
+    .discription_card_title {
+        padding: 0;
+        margin: 0;
+    }
+    .sale p,
+    .discription_card_title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    .discription_card    {
+        position: absolute;
+        display: none;
+        background-color: rgb(255, 255, 255);
+        opacity: 0.8;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .discription_card_title p {
+        font-size: 26px;
+        text-align: center;
+        margin: 10px 0;
+    }
+    main>div:hover .discription_card {
+        display: block;
+    }
+    main::after {
+        content:'';
+        clear: both;
+        display: block;
+        margin-bottom: 100px;
+    }

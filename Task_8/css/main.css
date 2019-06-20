@@ -1,0 +1,107 @@
+﻿body {
+  margin: 0;
+ /* padding-top: 1900 px;*/
+  background-color: rgb(206, 203, 197);
+  font-family: 'Roboto', sans-serif;
+}
+
+ .wrapper, 
+ header, main, aside, section, 
+ aside div, section div,
+ footer {
+  box-sizing: border-box;
+ }
+ header, section, footer,
+ aside > div {
+background-color: #fff;   
+ }
+ h1, h2,
+.content_block p,
+.content_block_text p, 
+footer p {
+   margin: 10px 0px 10px 0px;
+   padding: 10px;
+ }
+ header {
+   /*height: 100px;*/
+   padding-top: 10px;
+ }
+h1, footer p {
+  text-align: center;
+}
+h1 {
+font-size: 40px;
+}
+h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+footer p {
+  font-size: 18px;
+}
+h3 {
+  font-size: 15px;
+}
+main, 
+aside {
+font-size: 14px;
+display: inline-block;
+/*height: 900px;*/
+vertical-align: top;
+}
+main {
+  width: 820px;
+  margin-right: 20px;
+}
+aside {
+  width: 380px;
+  margin-top: 20px;
+}
+main, section,
+.about_me, .popular_post,
+.follow_me {
+  margin-top: 20px;
+  padding: 20px 10px 20px 10px;
+}
+/*section {
+height: 400px;
+}*/
+.section_title p 
+ {
+  font-size: 12px;
+  margin: 10px 0;
+}
+.content_block
+ {
+  height: 200px;
+}
+.content_block {
+  background-color: rgb(50, 241, 97);
+  background-image: url(../img/beeflower.png);
+  /*background-position: cover;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer {
+  text-decoration-color: #bec02e;
+  background-color: #bfe774;
+  padding: 10px 5px 10px 5px;
+  margin-top: 10px;
+  font-style: bold;
+}
+.about_me {
+margin-top: 40px;
+}
+.about_me, .popular_post, .follow_me {
+ height: 200px;
+
+}
+.about_me_img, .popular_post_img1,
+.popular_post_img2,.popular_post_img3 {
+  background-color: #2a8f68;
+  background-image: url(../img/spring_flowers.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
